@@ -88,6 +88,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Homogeneity test in R</title>
 
+  <meta property="description" itemprop="description" content="first before going to do ANOVA"/>
 
 
   <!--  https://schema.org/Article -->
@@ -98,17 +99,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Homogeneity test in R"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="first before going to do ANOVA"/>
   <meta property="og:locale" content="en_US"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Homogeneity test in R"/>
+  <meta property="twitter:description" content="first before going to do ANOVA"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Homogeneity test in R"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["Rstat"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Sith Jaisong"]}]}]},{"type":"character","attributes":{},"value":["03-16-2021"]},{"type":"character","attributes":{},"value":["images/homogeneous-cartoon.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Homogeneity test in R"]},{"type":"character","attributes":{},"value":["first before going to do ANOVA"]},{"type":"character","attributes":{},"value":["Rstat"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Sith Jaisong"]}]}]},{"type":"character","attributes":{},"value":["03-16-2021"]},{"type":"character","attributes":{},"value":["images/homogeneous-cartoon.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1452,7 +1455,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Homogeneity test in R","authors":[{"author":"Sith Jaisong","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-03-16T00:00:00.000+07:00","citationText":"Jaisong, 2021"}
+{"title":"Homogeneity test in R","description":"first before going to do ANOVA","authors":[{"author":"Sith Jaisong","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-03-16T00:00:00.000+07:00","citationText":"Jaisong, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1468,7 +1471,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="dt=tag">Rstat</div>
 </div>
 <!--/radix_placeholder_categories-->
-
+<p>first before going to do ANOVA</p>
 </div>
 
 <div class="d-byline">
@@ -1530,9 +1533,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 18 F50   771</code></pre>
 </div>
 <p>แบบนี้มันถึงจะไปต่อแล้วรู้เรื่องการเชคความแปรปรวนนั้นมีหลายวิธี</p>
-<ol type="1">
-<li>F-test ทอสอบได้แค่ 2 กลุ่ม เท่านั้น</li>
-</ol>
+<h3 id="f-test">F-test</h3>
+<p>ทดสอบได้แค่ 2 กลุ่ม เท่านั้น</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/stats/var.test.html'>var.test</a></span><span class='op'>(</span><span class='va'>yield</span> <span class='op'>~</span> <span class='va'>trt</span>, data <span class='op'>=</span> <span class='va'>tidy_data</span><span class='op'>)</span>
@@ -1550,23 +1552,41 @@ sample estimates:
 ratio of variances 
           1.307441 </code></pre>
 </div>
-<p>2 Bartlett’s test อันนี้ แนะนำ ถ้านึกอะไรไม่ออก ให้นึกถึงอันนี้เลย โดยทั่วไปก็ใช้อันนี้กัน</p>
+<h3 id="bartletts-test">Bartlett’s test</h3>
+<p>อันนี้ แนะนำ ถ้านึกอะไรไม่ออก ให้นึกถึงอันนี้เลย โดยทั่วไปก็ใช้อันนี้กัน</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/stats/bartlett.test.html'>bartlett.test</a></span><span class='op'>(</span><span class='va'>yield</span> <span class='op'>~</span> <span class='va'>trt</span>, data <span class='op'>=</span> <span class='va'>tidy_data</span><span class='op'>)</span>
+</code></pre>
+</div>
 <pre><code>
     Bartlett test of homogeneity of variances
 
 data:  yield by trt
 Bartlett&#39;s K-squared = 0.13487, df = 1, p-value = 0.7134</code></pre>
 </div>
-<p>เห็นไหมว่าผลมันก็ใกล้เคียงกัน 3 Levene’s test อันนี้ใช้ใน SPSS ใน R ก็จะมีใน <code>car</code> package</p>
+<p>เห็นไหมว่าผลมันก็ใกล้เคียงกัน</p>
+<h3 id="levenes-test">Levene’s test</h3>
+<p>อันนี้ใช้ใน SPSS ใน R ก็จะมีใน <code>car</code> package</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'><a href='https://r-forge.r-project.org/projects/car/'>car</a></span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/pkg/car/man/leveneTest.html'>leveneTest</a></span><span class='op'>(</span><span class='va'>yield</span> <span class='op'>~</span> <span class='va'>trt</span>, data <span class='op'>=</span> <span class='va'>tidy_data</span><span class='op'>)</span>
+</code></pre>
+</div>
 <pre><code>Levene&#39;s Test for Homogeneity of Variance (center = median)
       Df F value Pr(&gt;F)
 group  1  0.6448 0.4337
       16               </code></pre>
 </div>
-<p>p มันจะต่างออกไปเพราะว่า 4.Fligner-Killeen’s test วิธีนี้ ค่อนข้างจะ robust กว่าวิธีอื่นๆ ถึงแม้ว่าจะมีการกระจายไม่ค่อยจะ normal เท่าไหร่</p>
+<p>p มันจะต่างออกไปเพราะว่า</p>
+<h3 id="fligner-killeens-test">Fligner-Killeen’s test</h3>
+<p>วิธีนี้ ค่อนข้างจะ robust กว่าวิธีอื่นๆ ถึงแม้ว่าจะมีการกระจายไม่ค่อยจะ normal เท่าไหร่</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='fu'><a href='https://rdrr.io/r/stats/fligner.test.html'>fligner.test</a></span><span class='op'>(</span><span class='va'>yield</span> <span class='op'>~</span> <span class='va'>trt</span>, data <span class='op'>=</span> <span class='va'>tidy_data</span><span class='op'>)</span>
+</code></pre>
+</div>
 <pre><code>
     Fligner-Killeen test of homogeneity of variances
 
