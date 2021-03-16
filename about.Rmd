@@ -1,0 +1,18 @@
+---
+title: "About this blog"
+description: |
+  start a point to know me 
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง
+
+## About me:
+to be continue
+
+## Education:
+to be continue

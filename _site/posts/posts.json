@@ -1,0 +1,21 @@
+[
+  {
+    "path": "posts/2021-03-16-buiulding-my-personal-website/",
+    "title": "Homogeneity test in R",
+    "description": {},
+    "author": [
+      {
+        "name": "Sith Jaisong",
+        "url": {}
+      }
+    ],
+    "date": "2021-03-16",
+    "categories": [
+      "Rstat"
+    ],
+    "contents": "\r\nเราเรียนสถิติมา เมื่อเราต้องการเปรียบเทียบ กลุ่มตัวอย่าง 2 กลุ่ม หรือ มากกว่า ว่ามีค่าเฉลี่ยแตกต่างกันหรือไม่ทางสถิติ (ผมไม่ได้เป็นนักสถิติจริงจัง ผมเอาแค่ใช้งาน ดังนั้นต่อไปนี้อ่านไว้เฉยๆ อย่าไปอางอิงอะไรนะครับ )\r\nความแปรปรวนต้องไม่แตกต่างกันอย่างมีนัยทางสถิติ นั้นก็คือ ไอ้เขาสองลูงนี้ ควรจะไม่แตกต่างกันมากนัก ถึงจะเอามาเปรียบเทียบกันได้ จริงไหม แล้วจะรู้ได้อย่างไร สมมุติ มี การทดลอง ชื่อ F10 กับ F50 วัดผลออกมาดังนี้ ผมเอาตัวอย่างข้อมูลจากหนังสือชื่อ สถิติ:การวางแผนการทดลองและการวิเคราะห์ข้อมูลในงานวิจัยด้านพืชด้วย R ของ ชูศักดิ์ จอมพุก\r\n\r\n\r\nF10 <- c(605, 583, 592, 602, 587, 595, 615, 612, 606)\r\nF50 <- c(779, 780, 797, 779, 778, 801, 785, 779, 771)\r\ntest_data <- data.frame(F10, F50)\r\n\r\n\r\n\r\nแล้วจะได้รูปแบบของข้อมูลแบบนี้มา\r\n\r\n  F10 F50\r\n1 605 779\r\n2 583 780\r\n3 592 797\r\n4 602 779\r\n5 587 778\r\n6 595 801\r\n7 615 785\r\n8 612 779\r\n9 606 771\r\n\r\nบอกเลยว่า มันไม่ใช่โครงสร้างที่เราจะเหมาะจะมาวิเคราะห์ เลย หรือเอามาทำอะไรต่อ วิธีการ โดยการขอใช้ gather() จาก tidyverse package\r\n\r\n\r\nlibrary(tidyverse)\r\ntidy_data <- test_data %>% gather(key = \"trt\", value = \"yield\")\r\ntidy_data\r\n\r\n\r\n   trt yield\r\n1  F10   605\r\n2  F10   583\r\n3  F10   592\r\n4  F10   602\r\n5  F10   587\r\n6  F10   595\r\n7  F10   615\r\n8  F10   612\r\n9  F10   606\r\n10 F50   779\r\n11 F50   780\r\n12 F50   797\r\n13 F50   779\r\n14 F50   778\r\n15 F50   801\r\n16 F50   785\r\n17 F50   779\r\n18 F50   771\r\n\r\nแบบนี้มันถึงจะไปต่อแล้วรู้เรื่องการเชคความแปรปรวนนั้นมีหลายวิธี\r\nF-test ทอสอบได้แค่ 2 กลุ่ม เท่านั้น\r\n\r\n\r\nvar.test(yield ~ trt, data = tidy_data)\r\n\r\n\r\n\r\n    F test to compare two variances\r\n\r\ndata:  yield by trt\r\nF = 1.3074, num df = 8, denom df = 8, p-value = 0.7137\r\nalternative hypothesis: true ratio of variances is not equal to 1\r\n95 percent confidence interval:\r\n 0.2949165 5.7962277\r\nsample estimates:\r\nratio of variances \r\n          1.307441 \r\n\r\n2 Bartlett’s test อันนี้ แนะนำ ถ้านึกอะไรไม่ออก ให้นึกถึงอันนี้เลย โดยทั่วไปก็ใช้อันนี้กัน\r\n\r\n\r\n    Bartlett test of homogeneity of variances\r\n\r\ndata:  yield by trt\r\nBartlett's K-squared = 0.13487, df = 1, p-value = 0.7134\r\n\r\nเห็นไหมว่าผลมันก็ใกล้เคียงกัน 3 Levene’s test อันนี้ใช้ใน SPSS ใน R ก็จะมีใน car package\r\n\r\nLevene's Test for Homogeneity of Variance (center = median)\r\n      Df F value Pr(>F)\r\ngroup  1  0.6448 0.4337\r\n      16               \r\n\r\np มันจะต่างออกไปเพราะว่า 4.Fligner-Killeen’s test วิธีนี้ ค่อนข้างจะ robust กว่าวิธีอื่นๆ ถึงแม้ว่าจะมีการกระจายไม่ค่อยจะ normal เท่าไหร่\r\n\r\n\r\n    Fligner-Killeen test of homogeneity of variances\r\n\r\ndata:  yield by trt\r\nFligner-Killeen:med chi-squared = 0.61691, df = 1, p-value =\r\n0.4322\r\n\r\nส่วนตัวไม่ติด ว่าจะใช้วิธีไหน แต่ขอให้บอกว่า ใช้อะไรทดสอบก็ พอ จำไว้ว่าถ้า Homogeneity of Variance ไม่ผ่านแล้ว assumption ของ parametric test ก็ไม่ผ่านเช่นกัน อาจจะต้องหันไปใช้วิธี Nonparametric test แทน\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-03-16-buiulding-my-personal-website/images/homogeneous-cartoon.jpg",
+    "last_modified": "2021-03-16T16:01:30+07:00",
+    "input_file": {}
+  }
+]

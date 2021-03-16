@@ -1,0 +1,27 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "start a point to know me \n",
+      "author": [],
+      "contents": "\r\nสวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\nAbout me:\r\nto be continue\r\nEducation:\r\nto be continue\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-16T16:01:40+07:00"
+    },
+    {
+      "path": "blog.html",
+      "title": "blog",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-16T16:01:41+07:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Posts",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-16T16:01:41+07:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
