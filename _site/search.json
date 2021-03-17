@@ -6,14 +6,14 @@
       "description": "start a point to know me \n",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          R to S[i]Th\r\n          \r\n          \r\n          Home\r\n          About\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sith jaisong\r\n          \r\n          \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          © Sith Jaisong 2021. Made with the R distill package.\r\n          \r\n          \r\n\r\n    \r\n  ",
-      "last_modified": "2021-03-17T17:12:03+07:00"
+      "last_modified": "2021-03-17T17:16:21+07:00"
     },
     {
       "path": "index.html",
       "title": "R to S[i]TH",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-17T17:12:04+07:00"
+      "last_modified": "2021-03-17T17:16:22+07:00"
     },
     {
       "path": "sec.html",
@@ -27,7 +27,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-17T17:12:05+07:00"
+      "last_modified": "2021-03-17T17:16:23+07:00"
     }
   ],
   "collections": ["posts/posts.json"]

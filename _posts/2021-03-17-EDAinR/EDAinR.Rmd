@@ -1,0 +1,68 @@
+---
+title: "EDA in R"
+description: Let look at EDA in R
+categories:
+  - Rstat
+author:
+  - name: Sith Jaisong
+date: 03-16-2021
+preview:
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+data("chickwts")
+glimpse(chickwts)
+```
+## {package} ใน R ที่ใช้เพื่อทำ EDA
+
+ปกติเวลาเราทำงานกับข้อมูลเราควรดูว่าข้อมูลที่เรากำลังทำอยู่เป็นอย่างไรก่อนวิเคราะห์ ไม่ใช่ว่า เอ้ย ทำเสร็จแล้ว วิเคราะห์เลย เราควรจะต้องมาดูว่า มันเป็นอย่างไรบ้าง การกระจายเป็นอย่างไรบ้าง มีความสัมพันธ์กันบ้างไหม
+
+### {skimr} package
+```{r}
+library(skimr)
+skim(chickwts)
+```
+
+ฟังชั่นนี้ เราจะเห็น histogram ของ interval data แถมยังบอก sd percentile ที่ต่างๆ 0 25 50 75 100 ด้วย
+
+### {DataExplorer} package
+```{r}
+library(DataExplorer)
+plot_bar(diamonds, by = "cut", by_position = "dodge")
+```
+
+อันนี้ก็ รีพอร์ต ออกมาหมด
+
+### {inspectdf} package
+
+```{r}
+devtools::install_github("alastairrushworth/inspectdf")
+library(inspectdf)
+```
+
+แพกเกจนี้ เพิ่งค้นพบ และ ทำออกมาได้ดีมากๆ ง่าย แบบคนขี้เกียจทำ
+
+```{r}
+starwars %>% group_by(gender) %>% inspect_na()
+```
+
+```{r}
+tech %>%
+  group_by(year) %>%
+  inspect_cor() %>%
+  show_plot()
+```
+น่าสนใจมากนะ โดยเฉพาะ
+ทำให้เราสามารถคัดเลือกตัวแปรว่าตัวแปรไหนที่เราควรสนใจไม่เชิงความสัมพันธ์ระหว่างตัวแปร
+
+และผมก็จะหามาเรื่อยๆ นะครับ แบบฉบับสำหรับคนขี้เกียจ
