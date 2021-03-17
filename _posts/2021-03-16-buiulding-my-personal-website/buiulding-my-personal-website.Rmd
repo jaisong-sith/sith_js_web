@@ -10,10 +10,12 @@ preview: images/homogeneous-cartoon.jpg
 output:
   distill::distill_article:
     self_contained: false
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 เราเรียนสถิติมา เมื่อเราต้องการเปรียบเทียบ กลุ่มตัวอย่าง 2 กลุ่ม หรือ มากกว่า ว่ามีค่าเฉลี่ยแตกต่างกันหรือไม่ทางสถิติ (ผมไม่ได้เป็นนักสถิติจริงจัง ผมเอาแค่ใช้งาน ดังนั้นต่อไปนี้อ่านไว้เฉยๆ อย่าไปอางอิงอะไรนะครับ )
@@ -23,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 แล้วจะรู้ได้อย่างไร
 สมมุติ มี การทดลอง ชื่อ F10 กับ F50 วัดผลออกมาดังนี้ ผมเอาตัวอย่างข้อมูลจากหนังสือชื่อ สถิติ:การวางแผนการทดลองและการวิเคราะห์ข้อมูลในงานวิจัยด้านพืชด้วย R ของ ชูศักดิ์ จอมพุก
 
-```{r echo=TRUE}
+```{r echo=TRUE, chunk-border}
 F10 <- c(605, 583, 592, 602, 587, 595, 615, 612, 606)
 F50 <- c(779, 780, 797, 779, 778, 801, 785, 779, 771)
 test_data <- data.frame(F10, F50)

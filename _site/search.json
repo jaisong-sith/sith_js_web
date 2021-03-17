@@ -2,25 +2,25 @@
   "articles": [
     {
       "path": "about.html",
-      "title": "About this blog",
+      "title": "Sith jaisong",
       "description": "start a point to know me \n",
       "author": [],
-      "contents": "\r\nสวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\nAbout me:\r\nto be continue\r\nEducation:\r\nto be continue\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-16T17:34:57+07:00"
+      "contents": "\r\n\r\n          \r\n          \r\n          R to S[i]Th\r\n          \r\n          \r\n          Home\r\n          About\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sith jaisong\r\n          \r\n          \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          © Sith Jaisong 2021. Made with the R distill package.\r\n          \r\n          \r\n\r\n    \r\n  ",
+      "last_modified": "2021-03-17T15:57:10+07:00"
     },
     {
       "path": "blog.html",
       "title": "blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-16T17:34:58+07:00"
+      "last_modified": "2021-03-17T15:57:11+07:00"
     },
     {
       "path": "index.html",
-      "title": "Posts",
+      "title": "R to S[i]TH",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-16T17:34:59+07:00"
+      "last_modified": "2021-03-17T15:57:12+07:00"
     }
   ],
   "collections": ["posts/posts.json"]

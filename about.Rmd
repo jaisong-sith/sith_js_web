@@ -1,7 +1,10 @@
 ---
-title: "About this blog"
+title: "Sith jaisong"
 description: |
   start a point to know me 
+image: sithJs2.jpg
+output:
+  postcards::jolla
 site: distill::distill_website
 ---
 

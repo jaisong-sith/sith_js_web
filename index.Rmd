@@ -1,5 +1,5 @@
 ---
-title: "Posts"
+title: "R to S[i]TH"
 site: distill::distill_website
 listing: posts
 ---

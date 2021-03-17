@@ -111,7 +111,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Homogeneity test in R"]},{"type":"character","attributes":{},"value":["first before going to do ANOVA"]},{"type":"character","attributes":{},"value":["Rstat"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Sith Jaisong"]}]}]},{"type":"character","attributes":{},"value":["03-16-2021"]},{"type":"character","attributes":{},"value":["images/homogeneous-cartoon.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","categories","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Homogeneity test in R"]},{"type":"character","attributes":{},"value":["first before going to do ANOVA"]},{"type":"character","attributes":{},"value":["Rstat"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Sith Jaisong"]}]}]},{"type":"character","attributes":{},"value":["03-16-2021"]},{"type":"character","attributes":{},"value":["images/homogeneous-cartoon.jpg"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_float"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1481,6 +1481,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-article">
+<div class="d-contents d-contents-float">
+<nav class="l-text toc figcaption" id="TOC">
+<h3>Contents</h3>
+<ul>
+<li><a href="#f-test">F-test</a></li>
+<li><a href="#bartletts-test">Bartlett’s test</a></li>
+<li><a href="#levenes-test">Levene’s test</a></li>
+<li><a href="#fligner-killeens-test">Fligner-Killeen’s test</a></li>
+</ul>
+</nav>
+</div>
 <p>เราเรียนสถิติมา เมื่อเราต้องการเปรียบเทียบ กลุ่มตัวอย่าง 2 กลุ่ม หรือ มากกว่า ว่ามีค่าเฉลี่ยแตกต่างกันหรือไม่ทางสถิติ (ผมไม่ได้เป็นนักสถิติจริงจัง ผมเอาแค่ใช้งาน ดังนั้นต่อไปนี้อ่านไว้เฉยๆ อย่าไปอางอิงอะไรนะครับ )</p>
 <p>ความแปรปรวนต้องไม่แตกต่างกันอย่างมีนัยทางสถิติ นั้นก็คือ ไอ้เขาสองลูงนี้ ควรจะไม่แตกต่างกันมากนัก ถึงจะเอามาเปรียบเทียบกันได้ จริงไหม แล้วจะรู้ได้อย่างไร สมมุติ มี การทดลอง ชื่อ F10 กับ F50 วัดผลออกมาดังนี้ ผมเอาตัวอย่างข้อมูลจากหนังสือชื่อ สถิติ:การวางแผนการทดลองและการวิเคราะห์ข้อมูลในงานวิจัยด้านพืชด้วย R ของ ชูศักดิ์ จอมพุก</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1493,6 +1504,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 <p>แล้วจะได้รูปแบบของข้อมูลแบบนี้มา</p>
 <div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>test_data</span>
+</code></pre>
+</div>
 <pre><code>  F10 F50
 1 605 779
 2 583 780
