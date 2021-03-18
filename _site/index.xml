@@ -9,6 +9,16 @@
     <generator>Distill</generator>
     <lastBuildDate>Tue, 16 Mar 2021 00:00:00 +0000</lastBuildDate>
     <item>
+      <title>EDA in R</title>
+      <dc:creator>Sith Jaisong</dc:creator>
+      <link>https://sithjaisong.netlify.app/posts/2021-03-17-EDAinR</link>
+      <description>Let look at EDA in R</description>
+      <category>Rstat</category>
+      <guid>https://sithjaisong.netlify.app/posts/2021-03-17-EDAinR</guid>
+      <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://sithjaisong.netlify.app/posts/2021-03-17-EDAinR/EDAinR_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
+    <item>
       <title>Homogeneity test in R</title>
       <dc:creator>Sith Jaisong</dc:creator>
       <link>https://sithjaisong.netlify.app/posts/2021-03-17-homogeneitytestinr</link>
@@ -17,15 +27,6 @@
       <guid>https://sithjaisong.netlify.app/posts/2021-03-17-homogeneitytestinr</guid>
       <pubDate>Tue, 16 Mar 2021 00:00:00 +0000</pubDate>
       <media:content url="https://sithjaisong.netlify.app/posts/2021-03-17-homogeneitytestinr/images/homogeneous-cartoon.jpg" medium="image" type="image/jpeg"/>
-    </item>
-    <item>
-      <title>EDA in R</title>
-      <dc:creator>Sith Jaisong</dc:creator>
-      <link>https://sithjaisong.netlify.app/posts/2021-03-17-EDAinR</link>
-      <description>Let look at EDA in R</description>
-      <category>Rstat</category>
-      <guid>https://sithjaisong.netlify.app/posts/2021-03-17-EDAinR</guid>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
