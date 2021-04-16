@@ -1,0 +1,33 @@
+---
+title: "start learing R"
+description: |
+  เริ่มต้น R อย่างไรดี
+draft: true
+author:
+  - name: Sith Jaisong
+    url: {}
+date: 04-02-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+อันที่จริง ผมได้ เขียนวิธีการเริ่มต้นเรียน R มาแล้วบ้าง และมีแหล่งเรียนรู้เยอะมาก ตั้งแต่ youtube หรือ post ต่าง ๆ
+
+เอาเที่เป็น youtube ภาษาไทย ดีๆ เยอะ
+
+ของอาจารย์ ประเสริฐ
+
+playlist สอนการเขียนโปรแกรมด้วยภาษา R <https://www.youtube.com/playlist?list=PLoTScYm9O0GGSiUGzdWbjxIkZqEO-O6qZ>
+
+ผมแนะนำเลยครับ ถ้าครยังไม่มีพื้นฐาน
+
+แล้ว ก็ ถ้าจะเข้าวงการโปรแรกมอาร์แล้ว ก็จะต้องไม่พลาด R-blogger <https://www.r-bloggers.com/>
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.

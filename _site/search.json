@@ -5,15 +5,28 @@
       "title": "Sith jaisong",
       "description": "start a point to know me \n",
       "author": [],
-      "contents": "\n\n          \n          \n          R to S[i]Th\n          \n          \n          Home\n          About\n          \n          \n          \n          \n          \n          \n          ☰\n          \n          \n      \n        \n          \n            Sith jaisong\n          \n          \n            \n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\n              \n              About me:\n              to be continue\n              \n              \n              Education:\n              to be continue\n              \n            \n            \n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\n              \n              About me:\n              to be continue\n              \n              \n              Education:\n              to be continue\n              \n            \n          \n\n          \n            \n              \n          \n\n          \n            \n              \n                              \n            \n          \n        \n      \n    \n\n    \n    \n    \n          © Sith Jaisong 2021. Made with the R distill package.\n          \n          \n\n    \n  ",
-      "last_modified": "2021-03-18T08:31:09+07:00"
+      "contents": "\r\n\r\n          \r\n          \r\n          R to S[i]Th\r\n          \r\n          \r\n          Home\r\n          About\r\n          R collections\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sith jaisong\r\n          \r\n          \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          © Sith Jaisong 2021. Made with the R distill package.\r\n          \r\n          \r\n\r\n    \r\n  ",
+      "last_modified": "2021-03-31T17:04:58+07:00"
     },
     {
       "path": "index.html",
       "title": "R to S[i]TH",
       "author": [],
-      "contents": "\n\n\n\n",
-      "last_modified": "2021-03-18T08:31:10+07:00"
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-31T17:04:59+07:00"
+    },
+    {
+      "path": "R-collections.html",
+      "title": "R material collections",
+      "description": "A new article created using the Distill format.\n",
+      "author": [
+        {
+          "name": "Sith Jaisong",
+          "url": {}
+        }
+      ],
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-31T17:05:00+07:00"
     },
     {
       "path": "sec.html",
@@ -26,8 +39,8 @@
         }
       ],
       "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-03-18T08:31:12+07:00"
+      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-03-31T17:05:01+07:00"
     }
   ],
   "collections": ["posts/posts.json"]

@@ -1,0 +1,40 @@
+---
+title: "colorful of graph life"
+description: |
+  A short description of the post.
+author:
+  - name: Sith Jaisong
+    url: {}
+date: 03-30-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+การสร้างให้เป็นที่น่าสนใจ เป็นจุดที่สำคัญอันหนึ่งเหมือนกัน โดยเฉพาะการเลือกสี โดยส่วนตัว ชอบและให้เวลากับการเลือกสี ค่อนข้างมาก และมีความ จุกจิก เรื่องนี้เหมือนกัน เวลาจะสร้างกราฟแต่ละที เหม เลือกนานเหลือเกินว่า จะใช้กราฟ อะไรดี post นี้ ผมเองก็มีความตั้งใจอยากจำทำเพื่อเป็น note ให้กับตัวเองเหมือนกัน เวลาที่จะ เลือกสี ในการสร้างกราฟ แล้ว ปัจจุบัน {R} เนี้ย ไปไกล มากแล้ว วิธีการใ
+
+ใครที่สนใจ ผมก็ ดู [slide](https://www.dataembassy.co.nz/Liza-colours-in-R#1) นี้ ที่มีอธิบายเรื่องของการใช้สี พาเลทต่าง ๆ ที่ใช้ใน {R} นะ ผมเอง อ่านแล้วก็เข้าใจง่ายมาก ๆ และก็ อ่านง่าย เข้าใจง่าย
+
+```{r}
+library()
+here::here()
+
+```
+
+# ว่าด้วยเรื่องของสี
+
+pattele ที่อยากจะแนะนำและก็สวย ใช้งานงานง่าย กับ {ggplot}
+
+1.  [brewer](https://colorbrewer2.org/)
+
+2.  [wesanderson](https://wesandersonpalettes.tumblr.com/) ข้างล่างนี้เป็นตัวอย่างชื่อ ของ palttet
+
+![](https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/ggplot2/figures/030-ggplot-colors-wes-anderson-color-palettes-r-1.png)
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
