@@ -6,27 +6,27 @@
       "description": "start a point to know me \n",
       "author": [],
       "contents": "\r\n\r\n          \r\n          \r\n          R to S[i]Th\r\n          \r\n          \r\n          Home\r\n          About\r\n          R collections\r\n          \r\n          \r\n          \r\n          \r\n          \r\n          \r\n          ☰\r\n          \r\n          \r\n      \r\n        \r\n          \r\n            Sith jaisong\r\n          \r\n          \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n            \r\n              สวัสดีครับ ยินดีที่ได้รู้จัก หวังว่าบล้อกนี้จะเป็นประโยชน์กับคุณบ้าง\r\n              \r\n              About me:\r\n              to be continue\r\n              \r\n              \r\n              Education:\r\n              to be continue\r\n              \r\n            \r\n          \r\n\r\n          \r\n            \r\n              \r\n          \r\n\r\n          \r\n            \r\n              \r\n                              \r\n            \r\n          \r\n        \r\n      \r\n    \r\n\r\n    \r\n    \r\n    \r\n          © Sith Jaisong 2021. Made with the R distill package.\r\n          \r\n          \r\n\r\n    \r\n  ",
-      "last_modified": "2021-03-31T17:04:58+07:00"
+      "last_modified": "2021-04-20T13:06:55+07:00"
     },
     {
       "path": "index.html",
       "title": "R to S[i]TH",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-31T17:04:59+07:00"
+      "last_modified": "2021-04-20T13:06:55+07:00"
     },
     {
       "path": "R-collections.html",
       "title": "R material collections",
-      "description": "A new article created using the Distill format.\n",
+      "description": "My collections of R sourses from all around\n",
       "author": [
         {
           "name": "Sith Jaisong",
           "url": {}
         }
       ],
-      "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-31T17:05:00+07:00"
+      "contents": "\r\nR in general\r\npdf:\r\nVisualization\r\nggplot Wizardry: My Favorite Tricks and Secrets for Beautiful Plots in R\r\n\r\nR stat\r\n\r\nR and ML\r\n\r\nInteresting package\r\n{GSODR} A Global Surface Summary of the Day (GSOD) Weather Data Client for R\r\n\r\nR docs in pdf\r\n\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-04-20T13:06:56+07:00"
     },
     {
       "path": "sec.html",
@@ -40,7 +40,7 @@
       ],
       "date": "`r Sys.Date()`",
       "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-03-31T17:05:01+07:00"
+      "last_modified": "2021-04-20T13:06:57+07:00"
     }
   ],
   "collections": ["posts/posts.json"]

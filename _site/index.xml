@@ -7,7 +7,18 @@
     <description>Sith Jaisong
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Soil Analysis</title>
+      <dc:creator>Sith Jaisong</dc:creator>
+      <link>https://sithjaisong.netlify.app/posts/2021-04-20-soil-analysis</link>
+      <description>Soil analysis of soil survey from the North of Thailand</description>
+      <category>Rstat</category>
+      <category>Rice research</category>
+      <guid>https://sithjaisong.netlify.app/posts/2021-04-20-soil-analysis</guid>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0000</pubDate>
+      <media:content url="https://sithjaisong.netlify.app/posts/2021-04-20-soil-analysis/soil-analysis_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>colorful of graph life</title>
       <dc:creator>Sith Jaisong</dc:creator>
